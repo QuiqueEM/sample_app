@@ -3380,3 +3380,2815 @@ Migrating to AddPasswordDigestToUsers (20151015230819)
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Enrique Espinosa"], ["email", "espinosaquique@hotmail.com"], ["password_digest", "$2a$10$FdnA/ush.AA2Aldos73C.etzII0PFIm2doPb9Oitj5DJ4zkmvt57."], ["created_at", "2015-10-15 23:41:59.040655"], ["updated_at", "2015-10-15 23:41:59.040655"]]
   [1m[35m (6.8ms)[0m  commit transaction
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "espinosaquique@hotmail.com"]]
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 16:16:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (132.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 2298ms (Views: 2286.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 16:17:00 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 16:17:04 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:17:04 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:17:04 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:27:40 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users" for 148.204.77.93 at 2015-10-16 16:27:43 +0000
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 16:27:45 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 16:39:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (141.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 276ms (Views: 258.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 16:39:11 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:39:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 153ms (Views: 124.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:41:21 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 111303ms (Views: 357.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:43:12 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 18236ms (Views: 205.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:49:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 216ms (Views: 192.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:49:14 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:50:12 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `gravatar_for' for #<#<Class:0x007ff9e4d19d28>:0x007ff9e60ad088>):
+  app/views/users/show.html.erb:3:in `_app_views_users_show_html_erb___3027809332066224495_70355641452080'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (51.6ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 175ms (Views: 158.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:58:48 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:05 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:06 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:07 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 101.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 113.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:08 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:09 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 109ms (Views: 104.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 16:59:40 +0000
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('example@railstutorial.org') AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "name" = ?, "email" = ?, "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["name", "Example User"], ["email", "example@railstutorial.org"], ["password_digest", "$2a$10$3fHkDHMJWnhRpOtfJunO6OX.IbItzAgHCHT6cqHLQUHvsf856zedS"], ["updated_at", "2015-10-16 17:05:32.496409"], ["id", 1]]
+  [1m[36m (7.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 17:05:35 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:04 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/custom.self-54c4a853671a942a96323ab761e5eaaafca19c796527f1112abdddfbc4469f37.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:08 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 17:08:55 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2156ms (Views: 2153.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-5fb70746806327a5fe2ee6eb7b1b621d1f0fd1d6f664f541269d7d0380cb16e6.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:57 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:57 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:57 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:57 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:08:57 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:58 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:58 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:58 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:58 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 17:08:58 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 17:09:02 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 95.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 17:09:49 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20151015174601)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015174601"]]
+  [1m[35m (6.3ms)[0m  commit transaction
+Migrating to AddIndex (20151015223809)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015223809"]]
+  [1m[35m (5.5ms)[0m  commit transaction
+Migrating to AddPasswordDigestToUsers (20151015230819)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "password_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015230819"]]
+  [1m[35m (6.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 17:13:43 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 17:57:58 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (40.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1978ms (Views: 1964.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 17:58:01 +0000
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 18:08:16 +0000
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 18:12:30 +0000
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:26:04 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 88.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:05 +0000
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:26:24 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:26:24 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:26:24 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:26:24 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 109ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 18:26:25 +0000
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 18:26:40 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q4aTd06RNkrcssgETkBEQ4MMBims0Ui9AFuKb786+M/uiBLRLH15HMujoGJ2qDc20+nEj/MAv7UdyjmAnsVMSQ==", "user"=>{"name"=>"asdfghjjh", "email"=>"quiquemon@jaja", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (43.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 74.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 19:01:04 +0000
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 19:01:11 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fq7GdcDHeVLWjTgQtlt5igKdDnNDH1LOY3FlVkS4jBRToEfTois2BMGcUHaOswr/UnjM1RzOpcZ+4Na5ZUc4kg==", "user"=>{"name"=>"ghfxh", "email"=>"dfgd@erty.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dfgd@erty.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 292ms (Views: 199.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 19:01:11 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ntXtkP2zqSwJ8AdKfx9skt1BEbdaF8GNHX7vBD4dy+bddYQIRqB8qc2qHsRFA7HG5DG4IK5qA4p5EhTMQfDqQ==", "user"=>{"name"=>"ghfxh", "email"=>"dfgd@erty.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dfgd@erty.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 82.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 19:01:53 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ntXtkP2zqSwJ8AdKfx9skt1BEbdaF8GNHX7vBD4dy+bddYQIRqB8qc2qHsRFA7HG5DG4IK5qA4p5EhTMQfDqQ==", "user"=>{"name"=>"ghfxh", "email"=>"dfgd@erty.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `user_params' for #<UsersController:0x007ff9d421c7f0>):
+  app/controllers/users_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (71.1ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ntXtkP2zqSwJ8AdKfx9skt1BEbdaF8GNHX7vBD4dy+bddYQIRqB8qc2qHsRFA7HG5DG4IK5qA4p5EhTMQfDqQ==", "user"=>{"name"=>"ghfxh", "email"=>"dfgd@erty.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dfgd@erty.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 211ms (Views: 199.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 19:02:04 +0000
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 19:02:12 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VT/Tqi4dVO8UuganFSiPGMYTi8ONtlI103+AdK4bjhwQMVIMTPEbuQOrbsEtwPxtlvZJZdJnpT3O7jObj+Q6mg==", "user"=>{"name"=>"ghfxh", "email"=>"dfgd@erty.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dfgd@erty.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 299ms (Views: 217.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 19:02:13 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iLvQDaVjKThtiqYqh7jew8EATW/Kl1o0Dz8tcWPXsinNtVGrx49mbnqbzky/UK22keWPyZVGrTwSrp6eQigGrw==", "user"=>{"name"=>"ghfxh", "email"=>"dfgd@erty.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dfgd@erty.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 91.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 22:06:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (131.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 320ms (Views: 297.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 22:06:40 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 130ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 22:06:46 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/home/ubuntu/workspace/sample_app/app/views/users/new.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...nd=( f.email_field :email class: 'form-control');@output_buf...
+...                               ^
+/home/ubuntu/workspace/sample_app/app/views/users/new.html.erb:15: syntax error, unexpected keyword_class, expecting ')'
+....password_field :password class: 'form-control' );@output_bu...
+...                               ^
+/home/ubuntu/workspace/sample_app/app/views/users/new.html.erb:18: syntax error, unexpected keyword_class, expecting ')'
+...ld :password_confirmation class: 'form-control' );@output_bu...
+...                               ^):
+  app/views/users/new.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+  app/views/users/new.html.erb:15: syntax error, unexpected keyword_class, expecting ')'
+  app/views/users/new.html.erb:18: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (22.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (75.4ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 22:06:47 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/sample_app/app/views/users/new.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+...nd=( f.email_field :email class: 'form-control');@output_buf...
+...                               ^
+/home/ubuntu/workspace/sample_app/app/views/users/new.html.erb:15: syntax error, unexpected keyword_class, expecting ')'
+....password_field :password class: 'form-control' );@output_bu...
+...                               ^
+/home/ubuntu/workspace/sample_app/app/views/users/new.html.erb:18: syntax error, unexpected keyword_class, expecting ')'
+...ld :password_confirmation class: 'form-control' );@output_bu...
+...                               ^):
+  app/views/users/new.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+  app/views/users/new.html.erb:15: syntax error, unexpected keyword_class, expecting ')'
+  app/views/users/new.html.erb:18: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (29.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (79.3ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (34.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 135ms (Views: 134.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/custom.self-ef09228cfe3fbab9bbe5796c5cec30d4c9638383c8339e9b63bc1777ce13e571.css?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 22:07:38 +0000
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:07:40 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9lsvYefKBQ3E/SNICKeRpkdZDraEarDL34Vu8U11lAKzVa7HhSZKW9PsSy4wT+LTF7zMENu7R8PCFN0ebIoghA==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (5.8ms)
+  Rendered users/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 133ms (Views: 106.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:08:29 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9lsvYefKBQ3E/SNICKeRpkdZDraEarDL34Vu8U11lAKzVa7HhSZKW9PsSy4wT+LTF7zMENu7R8PCFN0ebIoghA==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1662ms (Views: 1654.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 22:08:31 +0000
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:14:19 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TsCpjopPkg2GA9SuuC1MDt0ONXAmk2+Z/dxTz7PXpX0Lzigo6KPdW5ESvMiAxT97jev31nlCmJHgTeAgkigR+w==", "user"=>{"name"=>"fernnand", "email"=>"fwe@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('fwe@a.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 204ms (Views: 109.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:14:34 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MmM8ZR62UOATtublVA5F0ARa1yk3/DKLryuJQexqoMJ3bb3DfFoftgSnjoNs5jalVL8Vj2gtxYOyujquzZUURA==", "user"=>{"name"=>"fernnand", "email"=>"fwe@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('fwe@a.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 174ms (Views: 95.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MmM8ZR62UOATtublVA5F0ARa1yk3/DKLryuJQexqoMJ3bb3DfFoftgSnjoNs5jalVL8Vj2gtxYOyujquzZUURA==", "user"=>{"name"=>"fernnand", "email"=>"fwe@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('fwe@a.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 161ms (Views: 86.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 22:27:07 +0000
+
+
+Started GET "/users" for 148.204.77.93 at 2015-10-16 22:27:11 +0000
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 22:27:15 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 22:27:17 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 111ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:27:18 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3irgn79wYokP+rHM99u5JISp2aijePEebwQD6L4MaaSbJGE53Zwt3xjr2arPM8pR1EwbDvypBhZylbAHn/PdIg==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (5.5ms)
+  Rendered users/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 128.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:27:41 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0mu6pMQ2cibSH76z8F5tufGZU6z/mjmJSYwWEKSWbOeXZTsCpto9cMUO1tXIth7MoXyRCqBLzoFUHaX/hWnYYQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 191ms (Views: 110.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:27:56 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eo6LEBb3h5Ap1t59RB6UKQQ9LenxboZg2hj9pkRglOY/gAq2dBvIxj7Htht89udcVNjvT66/cWjHiU5JZZ8gYA==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 145ms (Views: 68.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:28:06 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x26DedyTmHFg1t66l6LAr0ZiivMnLuibe62fa47xmcOCYALfvn/XJ3fHttyvSrPaFodIVXj/H5NmPCyErw4tRQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 144ms (Views: 68.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:28:31 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x26DedyTmHFg1t66l6LAr0ZiivMnLuibe62fa47xmcOCYALfvn/XJ3fHttyvSrPaFodIVXj/H5NmPCyErw4tRQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 153ms (Views: 72.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 22:28:32 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 22:28:36 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 139ms (Views: 138.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 22:28:38 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 22:28:40 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cegkfH8SixoC8RHabFqyr7GeyPdr4bK//L3XsW/36HM05qXaHf7ETBXgebxUssHa4XsKUTQwRbfhLGReTghc9Q==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 127ms (Views: 119.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cegkfH8SixoC8RHabFqyr7GeyPdr4bK//L3XsW/36HM05qXaHf7ETBXgebxUssHa4XsKUTQwRbfhLGReTghc9Q==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 111ms (Views: 94.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:14 +0000
+
+
+Started GET "/users" for 148.204.77.93 at 2015-10-16 23:03:16 +0000
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:18 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:03:19 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:04:43 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:04:46 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:04:52 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 148.204.77.93 at 2015-10-16 23:04:55 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:04:56 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:05:29 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 23:05:30 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:05:34 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 148.204.77.93 at 2015-10-16 23:05:37 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 148.204.77.93 at 2015-10-16 23:05:39 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:05:40 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 105ms (Views: 104.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 23:06:21 +0000
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:06:45 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:07:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PuvB2dE81cQ5BnCefeQ11NG1FCZaHKkGbTOSL840bJt75UB/s9Caki4XGPhFDEahgVDWgAXNXg5woiHA78vYHQ==", "user"=>{"name"=>"Rails Tutorial", "email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rails Tutorial"], ["email", "example@railstutorial.org"], ["password_digest", "$2a$10$c1X3BA6cfpoAzaOPE9aYzOvg5grxce1noqyYqnYWavP3OqzTxxT4m"], ["created_at", "2015-10-16 23:07:00.703186"], ["updated_at", "2015-10-16 23:07:00.703186"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-quiqueem.c9.io/users/1
+Completed 302 Found in 89ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:07:01 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 95ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:09:07 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:09:08 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:09:11 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 134ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:09:13 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:10:07 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6a/CkxBq4TBD7CWCRFPUvtvAE/wl3ziwPX4/tEixNIasoUM1coauZlT9TeR8u6fLiyXRWnoOz7gg74xbaU6AAA==", "user"=>{"name"=>"Jorge Enrique Espinosa Medina", "email"=>"espinosaquique@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('espinosaquique@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Jorge Enrique Espinosa Medina"], ["email", "espinosaquique@hotmail.com"], ["password_digest", "$2a$10$M3bneyHTwZJmdQPmDMJTk.ul3j4ZWvNqqr8jp0OAbbO449HrYpA/."], ["created_at", "2015-10-16 23:10:07.435860"], ["updated_at", "2015-10-16 23:10:07.435860"]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-quiqueem.c9.io/users/2
+Completed 302 Found in 104ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/users/2" for 148.204.77.93 at 2015-10-16 23:10:07 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:10:13 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (9.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (6.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (7.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (5.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151015230819')[0m
+  [1m[35m (7.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015223809')
+  [1m[36m (5.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151015174601')[0m
+  [1m[35m (5.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (7.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (6.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (7.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015230819')
+  [1m[36m (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151015223809')[0m
+  [1m[35m (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015174601')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:11:51 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 98ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:51 +0000
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:51 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:11:52 +0000
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:11:56 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:12:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 28ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:12:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (38.1ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:12:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (44.0ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:12:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:12:11 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:4:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (36.6ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:12:14 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (112.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 214ms (Views: 213.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:12:28 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (48.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 149ms (Views: 145.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:12:57 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NE5hP6v9TwJLC8IMQpB37T5ujFJMOwW1kBg8lZM4mKJxQOCZyREAVFwaqmp6eASYbotO9BPq8r2NiY96sscsJA==", "user"=>{"name"=>"Jorge Enrique Espinosa Medina", "email"=>"espinosaquique@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('espinosaquique@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jorge Enrique Espinosa Medina"], ["email", "espinosaquique@hotmail.com"], ["password_digest", "$2a$10$8tX6960bqHnkqiYawsJ8auooqR8b72c3UkcPMZUWn7BzkSCxQ9L/e"], ["created_at", "2015-10-16 23:12:58.003763"], ["updated_at", "2015-10-16 23:12:58.003763"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+Redirected to https://rails-tutorial-quiqueem.c9.io/users/1
+Completed 302 Found in 114ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:12:58 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:03 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 125ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (10.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (9.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (14.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (7.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151015230819')[0m
+  [1m[35m (8.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015223809')
+  [1m[36m (8.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151015174601')[0m
+  [1m[35m (9.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (10.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (7.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (6.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (7.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015230819')
+  [1m[36m (9.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151015223809')[0m
+  [1m[35m (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015174601')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (141.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 268ms (Views: 257.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:41 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 146ms (Views: 145.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 143ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 133ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for 148.204.77.93 at 2015-10-16 23:13:42 +0000
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:15:55 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (32.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 149.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:17:46 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GhA4rY+GRtiBctKjm6XMpbXq+jOmKDPHpB3OQgieKAtfHrkL7WoJjpZjusWjTb/Q5Q84lfn5xM+5jH2tKWGcjQ==", "user"=>{"name"=>"Rails Tutorial", "email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 81.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:17:57 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ONSwvp0WESGlnYgib/JX+0N1Ca9k6QqGdPvRByWC/L592jEY//ped7KM4ERXGiSOE5DLCTs4/Y5pamLoBH1IOA==", "user"=>{"name"=>"Rails Tutorial", "email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rails Tutorial"], ["email", "example@railstutorial.org"], ["password_digest", "$2a$10$j83lnover8pO46HhUQJ63uWYwiKOHZ6jh6xs1mZ.mZs3obQlh3OZa"], ["created_at", "2015-10-16 23:17:57.771661"], ["updated_at", "2015-10-16 23:17:57.771661"]]
+  [1m[35m (7.8ms)[0m  commit transaction
+Redirected to https://rails-tutorial-quiqueem.c9.io/users/1
+Completed 302 Found in 87ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:17:57 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (10.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (7.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20151015174601)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015174601"]]
+  [1m[35m (8.3ms)[0m  commit transaction
+Migrating to AddIndex (20151015223809)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015223809"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+Migrating to AddPasswordDigestToUsers (20151015230819)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "password_digest" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015230819"]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 148.204.77.93 at 2015-10-16 23:19:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (101.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 241ms (Views: 231.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 148.204.77.93 at 2015-10-16 23:19:22 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 160ms (Views: 151.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 148.204.77.93 at 2015-10-16 23:19:44 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b8/AK43pV3EkncBZibo2bpL9QeGdJEFc1kfLAhHKVw0qwUGN7wUYJzOMqD+xUkUbwhiDR8L1tlTL1njtMDXjiw==", "user"=>{"name"=>"Rails Tutorial", "email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('example@railstutorial.org') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rails Tutorial"], ["email", "example@railstutorial.org"], ["password_digest", "$2a$10$41MgOqzYitjHkcl86SvuUOK.61Q83stYqqBRv4Ed5ZjviwHOX7EfG"], ["created_at", "2015-10-16 23:19:44.704691"], ["updated_at", "2015-10-16 23:19:44.704691"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-quiqueem.c9.io/users/1
+Completed 302 Found in 120ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:19:44 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 145ms (Views: 133.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 148.204.77.93 at 2015-10-16 23:20:05 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 135ms (Views: 132.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-b3d4cb52ea7b8e81747af6c2df72b7c7fca69ac35c6bcc00b1a82f0882ffd477.css?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/turbolinks.self-680e388bf7f759d85e2dbe0044d33f55e12b26da721317111c01ec92e53df55e.js?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 148.204.77.93 at 2015-10-16 23:20:06 +0000
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "example@railstutorial.org"]]
